@@ -1,0 +1,156 @@
+
+/* General Page Style */
+body {
+    background-color: #111F39;
+    color: #D1DCEC;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Main Headings */
+h1 {
+    color: #64B5F6;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Sub Headings */
+h2 {
+    color: #82CFFF;
+    font-size: 26px;
+}
+
+/* Paragraphs */
+p {
+    color: #D1DCEC;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Images */
+img {
+    float: right;
+    width: 400px;
+    height: auto;
+    margin: 10px 0 20px 25px;
+    border-radius: 12px;
+}
+
+/* Buttons */
+button {
+    background-color: #64B5F6;
+    color: #111F39;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.course-btn {
+    background-color: #64B5F6;
+    color: #111F39;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.course-btn:hover {
+    background-color: #90CAF9;
+    transform: translateY(-3px);
+}
+
+button:hover {
+    background-color: #90CAF9;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Matrix Section */
+.matrix-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.matrix-text {
+    flex: 1;
+}
+
+.matrix-example {
+    flex: 1;
+    text-align: center;
+}
+
+.matrix-example table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.matrix-example th,
+.matrix-example td {
+    border: 1px solid #82CFFF;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.matrix-example th {
+    background-color: #243B60;
+    color: #82CFFF;
+}
+
+.matrix-example td {
+    background-color: #192D4B;
+    color: #D1DCEC;
+}
+
+/* Digital Section */
+.digital-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.digital-text {
+    flex: 1;
+}
+
+.binary-example {
+    flex: 1;
+    text-align: center;
+}
+
+.binary-example table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.binary-example th,
+.binary-example td {
+    border: 1px solid #82CFFF;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.binary-example th {
+    background-color: #243B60;
+    color: #82CFFF;
+}
+
+.binary-example td {
+    background-color: #192D4B;
+    color: #D1DCEC;
+}
