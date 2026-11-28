@@ -1,0 +1,597 @@
+```css
+/* General Page Style */
+
+* {
+    box-sizing: border-box;
+} /* من برة المادة: يجعل حساب العرض يشمل المحتوى والحشو والحدود */
+
+html {
+    scroll-behavior: smooth;
+} /* من برة المادة: يجعل الانتقال بين أقسام الصفحة سلساً */
+
+body {
+    margin: 0;
+    background: #f7f6ef;
+    color: #143a40;
+    font-family: Arial, Tahoma, sans-serif;
+    line-height: 1.6;
+} /* من برة المادة: line-height يتحكم بالمسافة بين السطور */
+
+.wrap {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+} /* من برة المادة: max-width يحدد أقصى عرض للمحتوى */
+
+
+/* Main Header and Navigation */
+
+.topbar {
+    background-color: #102f36;
+}
+
+header {
+    background: #123b43;
+    color: white;
+}
+
+nav, .hero, .entry, footer .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+} /* من برة المادة: Flex يرتب العناصر بجانب بعضها وgap يحدد المسافة بينها */
+
+nav {
+    padding: 18px 0;
+    border-bottom: 1px solid #527075;
+}
+
+nav a, footer a {
+    color: white;
+}
+
+a {
+    color: #12585a;
+}
+
+a:hover {
+    color: #9a4527;
+}
+
+header a:hover, footer a:hover {
+    color: #bdfa83;
+}
+
+.brand {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.brand b {
+    background: #bdfa83;
+    color: #123b43;
+    padding: 4px 8px;
+    margin: 0 4px;
+}
+
+.language {
+    background: #c2f295;
+    color: #123b43;
+    border: 2px solid #c2f295;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font: bold 15px Arial, sans-serif;
+}
+
+.language:hover {
+    background: white;
+}
+
+.language:focus, a:focus {
+    outline: 3px solid #de8548;
+} /* من برة المادة: يظهر إطاراً حول العنصر عند تحديده بلوحة المفاتيح */
+
+
+/* Hero Section */
+
+.hero {
+    padding: 48px 0;
+}
+
+.hero div {
+    max-width: 570px;
+} /* من برة المادة: يحدد أقصى عرض للنص */
+
+.hero img {
+    width: 40%;
+    border-radius: 8px;
+    border: 1px solid #648380;
+}
+
+h1, h2, h3 {
+    line-height: 1.22;
+} /* من برة المادة: يتحكم بالمسافة بين أسطر العناوين */
+
+h1 {
+    font-size: 48px;
+    margin: 8px 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 23px;
+    margin: 0;
+}
+
+.hero p {
+    color: #d7e8e0;
+}
+
+.action {
+    display: inline-block;
+    background: #bdfa83;
+    color: #113c40;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+} /* من برة المادة: inline-block يسمح بتحديد المساحة الداخلية مع بقاء العنصر ضمن السطر */
+
+.action:hover {
+    background: #d5fbb5;
+    color: #113c40;
+}
+
+
+/* Main Content */
+
+main {
+    padding: 18px 0 48px;
+}
+
+.entry {
+    padding: 20px;
+    border: 1px solid #c7d2c8;
+    border-radius: 12px;
+    margin: 14px 0;
+    background: #fffefa;
+}
+
+.entry img {
+    width: 23%;
+    border-radius: 8px;
+}
+
+.entry div {
+    width: 72%;
+}
+
+.entry p {
+    margin: 6px 0;
+}
+
+.entry h3 a {
+    color: #143a40;
+    text-decoration: none;
+}
+
+.entry h3 a:hover {
+    text-decoration: underline;
+}
+
+.entry .action {
+    margin-top: 6px;
+}
+
+
+/* Courses List */
+
+.courses {
+    border-top: 2px solid #173f43;
+    padding: 0;
+    list-style: none;
+}
+
+.courses li {
+    background: #fffefa;
+    border-bottom: 1px solid #c1ccc2;
+    padding: 13px 18px;
+}
+
+.courses strong {
+    color: #245c50;
+}
+
+
+/* Resources Section */
+
+.resources {
+    padding: 18px 24px;
+    background: #e6eddf;
+    border-radius: 8px;
+}
+
+.source {
+    font-size: 14px;
+}
+
+
+/* Buttons */
+
+button, .course-btn, .it-button {
+    background: #bdfa83;
+    color: #113c40;
+    padding: 8px 16px;
+    border: 1px solid #527075;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover, .course-btn:hover, .it-button:hover {
+    background: #d5fbb5;
+    color: #113c40;
+}
+
+
+/* Shared Navigation for Inner Pages */
+
+.it-nav {
+    background: #123b43;
+    color: white;
+    padding: 22px 5%;
+}
+
+.it-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.it-nav a:hover {
+    color: #bdfa83;
+}
+
+.it-nav .wrap {
+    display: flex; /* من برة المادة: يرتب عناصر القائمة بجانب بعضها */
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px; /* من برة المادة: يحدد المسافة بين العناصر */
+}
+
+
+/* Inner Page Hero */
+
+.it-hero {
+    background: #123b43;
+    color: white;
+    padding: 48px 5%;
+    text-align: center;
+}
+
+.it-hero p {
+    color: #d7e8e0;
+}
+
+/* من برة المادة: class highlight يحدد الفقرات التي تحتاج لوناً مختلفاً */
+.it-hero .highlight {
+    color: #bdfa83;
+}
+
+.it-hero img {
+    width: 100%;
+    max-width: 400px; /* من برة المادة: يمنع الصورة من تجاوز العرض المحدد */
+    height: auto; /* من برة المادة: يحافظ على تناسب أبعاد الصورة */
+    border-radius: 8px;
+    border: 1px solid #648380;
+}
+
+
+/* Inner Page Content */
+
+.it-content {
+    width: 90%;
+    max-width: 1080px; /* من برة المادة: يحدد أقصى عرض للمحتوى */
+    margin: 25px auto;
+}
+
+.it-panel {
+    background: #fffefa;
+    border: 1px solid #c7d2c8;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 14px 0;
+}
+
+.it-panel h2 {
+    color: #245c50;
+    border-bottom: 2px solid #c7d2c8;
+    padding-bottom: 10px;
+}
+
+.it-panel h3 {
+    color: #245c50;
+    margin: 18px 0 10px;
+}
+
+.it-panel nav {
+    display: flex; /* من برة المادة: يرتب الروابط بجانب بعضها */
+    flex-wrap: wrap; /* من برة المادة: ينقل الروابط للسطر التالي عند ضيق المساحة */
+    gap: 12px; /* من برة المادة: يحدد المسافة بين الروابط */
+    padding: 10px 0;
+    border: 0;
+}
+
+.it-panel nav a {
+    color: #12585a;
+}
+
+.it-panel img {
+    max-width: 100%; /* من برة المادة: يمنع الصورة من الخروج عن حدود الحاوية */
+    height: auto; /* من برة المادة: يحافظ على تناسب أبعاد الصورة */
+    border-radius: 8px;
+}
+
+.it-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.it-panel th {
+    background: #123b43;
+    color: white;
+}
+
+.it-panel td, .it-panel th {
+    border: 1px solid #c7d2c8;
+    padding: 8px;
+    text-align: left;
+}
+
+.it-field {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #8da5a4;
+    font-size: 16px;
+}
+
+.it-road {
+    background: #e6eddf;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Quiz Section */
+
+.quiz {
+    background: #e6eddf;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.quiz h3 {
+    color: #245c50;
+}
+
+
+/* Matrix Section */
+
+.matrix-section {
+    display: flex; /* من برة المادة: يرتب العناصر بجانب بعضها */
+    align-items: center;
+    gap: 30px; /* من برة المادة: يحدد المسافة بين العناصر */
+    margin-top: 30px;
+}
+
+.matrix-text {
+    flex: 1; /* من برة المادة: يجعل النص يأخذ مساحة متاحة */
+}
+
+.matrix-example {
+    flex: 1; /* من برة المادة: يجعل الجدول يأخذ مساحة متاحة */
+    text-align: center;
+}
+
+.matrix-example table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.matrix-example th,
+.matrix-example td {
+    border: 1px solid #245c50;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.matrix-example th {
+    background-color: #e6eddf;
+    color: #245c50;
+}
+
+.matrix-example td {
+    background-color: #fffefa;
+    color: #143a40;
+}
+
+
+/* Digital Systems Section */
+
+.digital-section {
+    display: flex; /* من برة المادة: يرتب العناصر بجانب بعضها */
+    align-items: center;
+    gap: 30px; /* من برة المادة: يحدد المسافة بين العناصر */
+    margin-top: 30px;
+}
+
+.digital-text {
+    flex: 1; /* من برة المادة: يجعل النص يأخذ مساحة متاحة */
+}
+
+.binary-example {
+    flex: 1; /* من برة المادة: يجعل الجدول يأخذ مساحة متاحة */
+    text-align: center;
+}
+
+.binary-example table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.binary-example th,
+.binary-example td {
+    border: 1px solid #245c50;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.binary-example th {
+    background-color: #e6eddf;
+    color: #245c50;
+}
+
+.binary-example td {
+    background-color: #fffefa;
+    color: #143a40;
+}
+
+
+/* Footer */
+
+footer {
+    background: #143a40;
+    color: white;
+    padding: 25px 0;
+}
+
+footer .wrap {
+    flex-wrap: wrap; /* من برة المادة: يسمح بانتقال العناصر للسطر التالي */
+}
+
+.it-footer {
+    background: #123b43;
+    color: white;
+    padding: 22px 5%;
+    text-align: center;
+}
+
+.it-footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.it-footer a:hover {
+    color: #bdfa83;
+}
+
+
+/* Logo */
+
+.logo img {
+    max-width: 115px; /* من برة المادة: يحدد أقصى عرض للشعار */
+    height: auto; /* من برة المادة: يحافظ على تناسب أبعاد الشعار */
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+
+    /* من برة المادة: Media Query يغير التصميم حسب عرض الشاشة */
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px 0;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .entry {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px; /* من برة المادة: يحدد المسافة بين العناصر */
+    }
+
+    .entry img,
+    .entry div {
+        width: 100%;
+    }
+
+    .entry img {
+        max-width: 280px; /* من برة المادة: يحدد أقصى عرض للصورة */
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+
+    .topbar nav {
+        gap: 6px; /* من برة المادة: يحدد المسافة بين روابط القائمة */
+    }
+
+    .language {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .it-nav .wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .it-nav a {
+        margin: 5px;
+    }
+
+    .it-hero {
+        padding: 25px 5%;
+    }
+
+    .it-hero img {
+        width: 100%;
+    }
+
+    .it-content {
+        width: 94%;
+    }
+
+    .it-panel {
+        padding: 15px;
+    }
+
+    .it-panel table {
+        font-size: 14px;
+    }
+
+    .matrix-section,
+    .digital-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .matrix-example,
+    .binary-example {
+        width: 100%;
+    }
+
+    .it-footer a {
+        margin: 5px;
+    }
+}
+```
